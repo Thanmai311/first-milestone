@@ -10,8 +10,30 @@ Browser -> Nginx (port 80) -> Flask (port 5000) -> website files
 - **Reverse proxy:** Nginx forwards requests to the Flask app and returns its response.
 - **Flask app (`app.py`):** serves the files in the `site` folder.
 
-## Project structure
-- `site/`: HTML, CSS and JavaScript of the website
+## Project structure## About this project
+This project is part of my apprenticeship learning plan. Milestone 1 was
+building a simple website and maintaining it in GitHub. Milestone 2 was
+learning how a website runs on a Linux server, how to manage that server,
+and how to configure a reverse proxy.
+
+## Technologies used
+- HTML, CSS, JavaScript (website)
+- Python and Flask (application server)
+- Nginx (web server and reverse proxy)
+- Ubuntu on WSL2 (Linux environment on Windows 11)
+- Git and GitHub (version control)
+
+## Useful commands
+- `sudo service nginx start` / `stop` / `restart` / `status`
+- `sudo nginx -t` tests the Nginx configuration
+- `python app.py` starts the Flask app
+
+## Note
+This runs on my own laptop at http://localhost. It is a learning setup,
+not public internet hosting.
+
+## Author
+Thanmai (https://github.com/Thanmai311)- `site/`: HTML, CSS and JavaScript of the website
 - `app.py`: Flask application
 - `deploy/nginx-mysite.conf`: Nginx reverse proxy configuration
 
